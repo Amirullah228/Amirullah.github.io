@@ -11,8 +11,6 @@
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- libary aos -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--boostrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
@@ -52,7 +50,7 @@
     <section class="jumbotron text-center">
       <img src="img/profil.jpg" alt="amirullah" width="200" class="rounded-circle img-thumbnail"/>
       <h1 class="display-4">Amirullah</h1>
-      <p class="lead"></p>
+      <p class="lead">Youtuber | Webprograming</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -71,14 +69,14 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center mb-3">
-          <div class="col-md-4" data-aos="fade-right">
+          <div class="col-md-4" >
             <p>Nama: Amirullah <br>
               Tanggal lahir: 28/02/2000 Sukarjo Mesim<br>
               Jenis Kelamin : Laki-laki <br>
               Agama: islam <br>
               Hobby: Ngoding</p>
           </div>
-          <div class="col-md-4" data-aos="fade-left">
+          <div class="col-md-4">
             <p>Saya adalah seorang mahasiswa dari Kampus Stmik Dumai yang berada dijalan Bukit Bahtrem.
               Dan mulai belajar Pada tahun 2018. Demikian cerita singkat saya.
             </p>
@@ -105,7 +103,7 @@
         </div>
       <div class="row justify-content-center">
         <div class="col-md-3 mb-3">
-          <div class="card" data-aos="flip-left"  data-aos-duration="500">
+          <div class="card">
             <img src="img/projeks/projek1.png" class="card-img-top" alt="computer" />
             <div class="card-body">
               <p class="card-text text-center">web-based library application project using the php programming language.</p>
@@ -113,7 +111,7 @@
           </div>
         </div>
         <div class="col-md-3 mb-3">
-          <div class="card" data-aos="flip-left"  data-aos-duration="500" data-aos-delay="50">
+          <div class="card">
             <img src="img/projeks/projek2.png" class="card-img-top" alt="computer" />
             <div class="card-body">
               <p class="card-text text-center">web-based laundry application project using the php programming language.</p>
@@ -121,7 +119,7 @@
               </div>
             </div>
         <div class="col-md-3 mb-3">
-          <div class="card" data-aos="flip-left"  data-aos-duration="500" data-aos-delay="100" >
+          <div class="card">
             <img src="img/projeks/projek3.png" class="card-img-top" alt="computer" />
             <div class="card-body">
               <p class="card-text text-center">web-based CRUD application project using the PHP programming language.</p>
@@ -129,7 +127,7 @@
               </div>
             </div>
         <div class="col-md-3 mb-3">
-          <div class="card" data-aos="flip-left"  data-aos-duration="500" data-aos-delay="150">
+          <div class="card">
             <img src="img/projeks/projek4.png" class="card-img-top" alt="computer" />
             <div class="card-body">
               <p class="card-text text-center">web-based school tuition application project using the php programming language.</p>
@@ -241,39 +239,11 @@
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-    <!-- script AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-const galleryImg = document.querySelectorAll('.gallery-img');
-galleryImg.forEach((img, i) => {
-  img.dataset.aos = 'fade-down';
-  img.dataset.aosDelay = i * 100;
-  img.dataset.aosDuration = 1000;
-
- });
+    
 
 
-    AOS.init({
-      // hanya menampilkn anime sekali ketika discrol 
-      once: true,
-      duration: 2000
-    });
-  </script>
-
-<!-- script GSAp-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-<!-- plugin gsap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
-<script>
-  gsap.registerPlugin(TextPlugin);
-  gsap.to('.lead', {duration: 2, delay: 1.5, text: 'Youtuber | WebPrograming'})
-  gsap.from('.jumbotron img', {duration: 1, rotateY: 360, opacity: 0});
-  gsap.from('.navbar', {duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
-  gsap.from('.display-4', {duration: 1, x: -50, opacity: 0,  delay: 0.5, ease: 'backs' });
-
-</script>
 
   <!-- script googel shhet -->     
      <script>
